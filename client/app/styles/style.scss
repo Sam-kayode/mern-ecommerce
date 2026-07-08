@@ -4,8 +4,8 @@
 @import 'core/utils/fonts';
 @import 'core/utils/reset';
 
-// Import Bootstrap source files
-@import 'node_modules/bootstrap/scss/bootstrap';
+// Import Bootstrap source files (resolves via webpack; works with hoisted monorepo node_modules)
+@import '~bootstrap/scss/bootstrap';
 
 // Import core styles
 @import 'core/core';
